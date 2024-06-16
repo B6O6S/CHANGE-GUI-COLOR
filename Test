@@ -2210,9 +2210,9 @@ function RayfieldLibrary:CreateWindow(Settings)
 					ToggleSettings.Callback(ToggleSettings.CurrentValue)
 				end)
 				if not Success then
-					TweenService:Create(Toggle, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(0, 0, 0)}):Play()
+					TweenService:Create(Toggle, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(255, 0, 0)}):Play()
 					TweenService:Create(Toggle.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {Transparency = 1}):Play()
-					Toggle.Title.Text = "Callback Error"
+					Toggle.Title.Text = "حدث خطأ"
 					print("Rayfield | "..ToggleSettings.Name.." Callback Error " ..tostring(Response))
 					wait(0.5)
 					Toggle.Title.Text = ToggleSettings.Name
