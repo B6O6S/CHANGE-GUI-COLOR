@@ -61,7 +61,7 @@ local RayfieldLibrary = {
 			PlaceholderColor = Color3.fromRGB(0, 0, 0)
 		},
 		Light = {
-			TextFont = "Gotham", -- Default will use the various font faces used across Rayfield
+			TextFont = "Bold", -- Default will use the various font faces used across Rayfield
 			TextColor = Color3.fromRGB(255, 0, 0), -- i need to make all text 240, 240, 240 and base gray on transparency not color to do this
 
 			Background = Color3.fromRGB(0, 0, 0),
