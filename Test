@@ -1660,7 +1660,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 					InputSettings.Callback(Input.InputFrame.InputBox.Text)
 				end)
 				if not Success then
-					TweenService:Create(Input, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(85, 0, 0)}):Play()
+					TweenService:Create(Input, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(0, 0, 0)}):Play()
 					TweenService:Create(Input.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {Transparency = 1}):Play()
 					Input.Title.Text = "Callback Error"
 					print("Rayfield | "..InputSettings.Name.." Callback Error " ..tostring(Response))
@@ -1803,7 +1803,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 				DropdownOption.Visible = true
 
 				if DropdownSettings.CurrentOption == Option then
-					DropdownOption.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+					DropdownOption.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 				end
 
 				DropdownOption.BackgroundTransparency = 1
@@ -1908,9 +1908,9 @@ function RayfieldLibrary:CreateWindow(Settings)
 			for _, droption in ipairs(Dropdown.List:GetChildren()) do
 				if droption.ClassName == "Frame" and droption.Name ~= "Placeholder" then
 					if not table.find(DropdownSettings.CurrentOption, droption.Name) then
-						droption.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+						droption.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 					else
-						droption.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+						droption.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 					end
 				end
 			end
@@ -1943,7 +1943,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 					DropdownSettings.Callback(NewOption)
 				end)
 				if not Success then
-					TweenService:Create(Dropdown, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(85, 0, 0)}):Play()
+					TweenService:Create(Dropdown, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(0, 0, 0)}):Play()
 					TweenService:Create(Dropdown.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {Transparency = 1}):Play()
 					Dropdown.Title.Text = "Callback Error"
 					print("Rayfield | "..DropdownSettings.Name.." Callback Error " ..tostring(Response))
@@ -1956,9 +1956,9 @@ function RayfieldLibrary:CreateWindow(Settings)
 				for _, droption in ipairs(Dropdown.List:GetChildren()) do
 					if droption.ClassName == "Frame" and droption.Name ~= "Placeholder" then
 						if not table.find(DropdownSettings.CurrentOption, droption.Name) then
-							droption.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+							droption.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 						else
-							droption.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+							droption.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 						end
 					end
 				end
@@ -2041,7 +2041,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 					if not KeybindSettings.HoldToInteract then
 						local Success, Response = pcall(KeybindSettings.Callback)
 						if not Success then
-							TweenService:Create(Keybind, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(85, 0, 0)}):Play()
+							TweenService:Create(Keybind, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(0, 0, 0)}):Play()
 							TweenService:Create(Keybind.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {Transparency = 1}):Play()
 							Keybind.Title.Text = "Callback Error"
 							print("Rayfield | "..KeybindSettings.Name.." Callback Error " ..tostring(Response))
