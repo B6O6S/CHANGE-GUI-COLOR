@@ -1047,8 +1047,8 @@ function RayfieldLibrary:Notify(data) -- action e.g open messages
 		newNotification.Visible = true
 
 		if data.Actions then
-			warn('Rayfield | Not seeing your actions in notifications?')
-			print("Notification Actions are being sunset for now, keep up to date on when they're back in the discord. (sirius.menu/discord)")
+			warn('B6O6S HUB | فيه مشاكل في الهاك؟')
+			print("افتح تكت واكتب المشكله كامله عشان نحلها لك ان شاء الله ❤️")
 		end
 
 		-- Calculate textbounds and set initial values
